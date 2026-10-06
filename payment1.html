@@ -5,23 +5,18 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>ชำระเงิน</title>
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
 
-    <link rel="stylesheet"
-          href="css/payment1.css">
+    <link rel="stylesheet" href="css/payment1.css">
 
 </head>
 
@@ -29,19 +24,14 @@
 <body>
 
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
+<!-- HEADER -->
 
 <header class="header">
 
     <div class="header-left">
 
         <div class="logo-placeholder">
-
-            <img src="image/logo_kmutnb-(6).png"
-                 alt="KMUTNB Logo">
-
+            <img src="image/logo_kmutnb-(6).png" alt="KMUTNB Logo">
         </div>
 
         <div class="uni-name">
@@ -63,7 +53,15 @@
 
         <div class="user-icon">
 
-            <span>♙</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+
+                <circle cx="12" cy="7" r="4"></circle>
+
+            </svg>
 
         </div>
 
@@ -78,126 +76,24 @@
 
 
 
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
+<!-- NAVBAR -->
 
 <nav class="navbar">
 
-    <a href="index.html" class="nav-btn">
-        หน้าแรก
-    </a>
-
-    <a href="register.html" class="nav-btn">
-        ขึ้นทะเบียนนักศึกษา
-    </a>
-
-    <a href="login.html" class="nav-btn">
-        เข้าสู่ระบบ
-    </a>
-
-    <a href="map.html" class="nav-btn">
-        ติดต่อสอบถาม
-    </a>
+    <!-- <a href="index.html" class="nav-btn">หน้าแรก</a>
+    <a href="register.html" class="nav-btn">ขึ้นทะเบียนนักศึกษา</a>
+    <a href="login.html" class="nav-btn">เข้าสู่ระบบ</a>
+    <a href="map.html" class="nav-btn">ติดต่อสอบถาม</a> -->
 
 </nav>
 
 
 
-<!-- =====================================================
-     MAIN
-===================================================== -->
+<!-- MAIN -->
 
 <main class="main-content">
 
-
-    <!-- PAYMENT STEPS -->
-
-    <div class="payment-steps">
-
-        <div class="step active">
-
-            <div class="step-number">
-                1
-            </div>
-
-            <div class="step-text">
-                ชำระเงิน
-            </div>
-
-        </div>
-
-
-        <div class="step active">
-
-            <div class="step-number">
-                2
-            </div>
-
-            <div class="step-text">
-                แนบสลิป
-            </div>
-
-        </div>
-
-
-        <div class="step">
-
-            <div class="step-number">
-                3
-            </div>
-
-            <div class="step-text">
-                ตรวจสอบผล
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- APPLICANT -->
-
-    <section class="applicant-card">
-
-        <div class="applicant-icon">
-            🎓
-        </div>
-
-        <div class="applicant-info">
-
-            <small>
-                ข้อมูลผู้สมัครรอบ 2568
-            </small>
-
-            <h2>
-                นายปริญญา ทั้วเรียน
-            </h2>
-
-            <p>
-                เลขประจำตัวผู้สมัคร:
-                <strong>68-104928</strong>
-            </p>
-
-            <p>
-                คณะ/สาขาวิชา:
-                <strong>คณะวิศวกรรมศาสตร์</strong>
-            </p>
-
-            <p>
-                ภาควิชาวิศวกรรมคอมพิวเตอร์ (CPE)
-            </p>
-
-        </div>
-
-        <div class="applicant-status">
-            รอบรับตรง มจพ.
-        </div>
-
-    </section>
-
-
+<form id="payForm" action="payment.html" method="get">
 
     <!-- AMOUNT -->
 
@@ -230,54 +126,37 @@
 
         <div class="section-title-row">
 
-            <h2>
-                ▣ ช่องทางชำระเงิน
-            </h2>
+            <h2>▣ ช่องทางชำระเงิน</h2>
 
-            <span>
-                ไม่มีค่าธรรมเนียมบริการ
-            </span>
+            <span>ไม่มีค่าธรรมเนียมบริการ</span>
 
         </div>
 
 
         <div class="bank-card">
 
-            <div class="bank-icon">
-                🏦
-            </div>
+            <div class="bank-icon">🏦</div>
 
             <div class="bank-name">
 
-                <strong>
-                    ธนาคารกรุงเทพ
-                </strong>
+                <strong>ธนาคารกรุงเทพ</strong>
 
-                <span>
-                    Bangkok Bank (BBL)
-                </span>
+                <span>Bangkok Bank (BBL)</span>
 
             </div>
 
-            <div class="account-type">
-                บัญชีทางการ
-            </div>
+            <div class="account-type">บัญชีทางการ</div>
 
 
             <div class="account-number-box">
 
                 <div>
 
-                    <small>
-                        เลขที่บัญชีผู้รับชำระ
-                    </small>
+                    <small>เลขที่บัญชีผู้รับชำระ</small>
 
-                    <strong>
-                        167-0-67676-7
-                    </strong>
+                    <strong>167-0-67676-7</strong>
 
                 </div>
-
 
             </div>
 
@@ -286,23 +165,17 @@
 
                 <p>
                     ชื่อบัญชี:
-                    <span>
-                        ม.เทคโนโลยีพระจอมเกล้าพระนครเหนือ (ค่าธรรมเนียมการสมัคร)
-                    </span>
+                    <span>ม.เทคโนโลยีพระจอมเกล้าพระนครเหนือ (ค่าธรรมเนียมการสมัคร)</span>
                 </p>
 
                 <p>
                     สาขา:
-                    <span>
-                        ม.เทคโนโลยีพระจอมเกล้าพระนครเหนือ
-                    </span>
+                    <span>ม.เทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
                 </p>
 
                 <p>
                     ประเภทบัญชี:
-                    <span>
-                        ออมทรัพย์ (Savings)
-                    </span>
+                    <span>ออมทรัพย์ (Savings)</span>
                 </p>
 
             </div>
@@ -321,32 +194,22 @@
 
             <div>
 
-                <h2>
-                    ▣ แนบหลักฐานการชำระเงิน (Slip)
-                </h2>
+                <h2>▣ แนบหลักฐานการชำระเงิน (Slip)</h2>
 
-                <p>
-                    อัปโหลดสลิปที่เห็นการโอนเงิน
-                </p>
+                <p>อัปโหลดสลิปที่เห็นการโอนเงิน</p>
 
             </div>
 
-            <span class="required-badge">
-                * จำเป็น
-            </span>
+            <span class="required-badge">* จำเป็น</span>
 
         </div>
 
 
         <div class="upload-box">
 
-            <div class="upload-icon">
-                ☁
-            </div>
+            <div class="upload-icon">☁</div>
 
-            <h3>
-                แตะเพื่ออัปโหลดหรือถ่ายภาพสลิป
-            </h3>
+            <h3>แตะเพื่ออัปโหลดหรือถ่ายภาพสลิป</h3>
 
             <p>
                 รองรับไฟล์ JPG, PNG หรือ PDF
@@ -354,25 +217,19 @@
             </p>
 
             <label for="piger">เลือกไฟล์จากอุปกรณ์</label><br>
-            <input type="file" id="piger" name="piger">
-
-            </h5>
+            <input type="file" id="piger" name="piger"
+                   accept=".pdf,.jpg,.jpeg,.png" required>
 
         </div>
 
 
         <div class="slip-details">
 
-
             <div>
 
-                <small>
-                    ยอดเงินตามสลิป
-                </small>
+                <small>ยอดเงินตามสลิป</small>
 
-                <strong>
-                    500.00 THB
-                </strong>
+                <strong>500.00 THB</strong>
 
             </div>
 
@@ -381,7 +238,7 @@
 
         <label class="confirm-check">
 
-            <input type="checkbox">
+            <input type="checkbox" id="confirmSlip" name="confirmSlip" required>
 
             <span>
                 ข้าพเจ้ารับรองว่าหลักฐานการเงินนี้ถูกต้อง
@@ -399,9 +256,7 @@
 
     <section class="notice-box">
 
-        <h3>
-            ⓘ &nbsp; คำแนะนำสำคัญในการชำระเงิน
-        </h3>
+        <h3>ⓘ &nbsp; คำแนะนำสำคัญในการชำระเงิน</h3>
 
         <ul>
 
@@ -429,26 +284,81 @@
 
     <!-- CONFIRM -->
 
-    <a href="index.html"
-       class="confirm-button">
+    <a href="payment.html" class="confirm-button" id="confirmBtn">
 
         ✓ &nbsp; ยืนยันการชำระเงินและส่งหลักฐาน
 
     </a>
 
+</form>
 
 </main>
 
 
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
+<!-- FOOTER -->
 
 <footer class="footer">
 
     <div class="footer-col">
 
+        <strong>ติดต่อ มจพ. กรุงเทพฯ</strong>
+
+        <br>
+
+        มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+
+    </div>
+
+
+    <div class="footer-col">
+
+        1518 ถนนประชาราษฎร์ 1
+        แขวงวงศ์สว่าง เขตบางซื่อ
+
+        <br>
+
+        กรุงเทพฯ 10800
+
+    </div>
+
+
+    <div class="footer-col">
+
+        โทรศัพท์ : +66 2 555-2000
+
+        <br>
+
+        แฟกซ์ : +66 2 587-4350
+
+        <br>
+
+        อีเมล : contact@op.kmutnb.ac.th
+
+    </div>
+
+</footer>
+
+
+<!-- VALIDATION SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    var form = document.getElementById('payForm');
+
+    // กดปุ่มยืนยัน: ถ้าแนบสลิปหรือติ๊กรับรองไม่ครบ จะแจ้งเตือนและไม่ไปหน้าถัดไป
+    // ถ้าครบ requestSubmit() จะส่งฟอร์มไปที่ payment.html
+    document.getElementById('confirmBtn').addEventListener('click', function (e) {
+        e.preventDefault();
+        form.requestSubmit();
+    });
+
+});
+</script>
+
+</body>
+
+</html>
         <strong>
             ติดต่อ มจพ. กรุงเทพฯ
         </strong>
